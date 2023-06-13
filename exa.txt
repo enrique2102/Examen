@@ -1,0 +1,415 @@
+
+Enrique@DESKTOP-LLC9H7S MINGW64 ~
+$ cd c:
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c
+$ git clone https://github.com/enrique2102/Examen.git
+Cloning into 'Examen'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c
+$ cd Examen
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git branch
+* main
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git branch produccion
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git branch ventas
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git branch recurso_humano
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git branch
+* main
+  produccion
+  recurso_humano
+  ventas
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git checkout produccion
+Switched to branch 'produccion'
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git status
+On branch produccion
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   imagenproducto.png
+        new file:   materia_prima.txt
+        new file:   productofinal.txt
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git commit -m "Añadiendo algunos archivos a produccion"
+[produccion 7a68470] Añadiendo algunos archivos a produccion
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 imagenproducto.png
+ create mode 100644 materia_prima.txt
+ create mode 100644 productofinal.txt
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git push
+fatal: The current branch produccion has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin produccion
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git push -u origin produccion
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 21.31 KiB | 2.66 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'produccion' on GitHub by visiting:
+remote:      https://github.com/enrique2102/Examen/pull/new/produccion
+remote:
+To https://github.com/enrique2102/Examen.git
+ * [new branch]      produccion -> produccion
+branch 'produccion' set up to track 'origin/produccion'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git checkout produccion
+Switched to branch 'produccion'
+Your branch is up to date with 'origin/produccion'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git status
+On branch produccion
+Your branch is up to date with 'origin/produccion'.
+
+nothing to commit, working tree clean
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git status
+On branch produccion
+Your branch is up to date with 'origin/produccion'.
+
+nothing to commit, working tree clean
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git push
+Everything up-to-date
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git commit -m "Añadiendo algunos archivos a produccion"
+On branch produccion
+Your branch is up to date with 'origin/produccion'.
+
+nothing to commit, working tree clean
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git push
+Everything up-to-date
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (produccion)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git push -u origin ventas
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ventas' on GitHub by visiting:
+remote:      https://github.com/enrique2102/Examen/pull/new/ventas
+remote:
+To https://github.com/enrique2102/Examen.git
+ * [new branch]      ventas -> ventas
+branch 'ventas' set up to track 'origin/ventas'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git checkout ventas
+Switched to branch 'ventas'
+Your branch is up to date with 'origin/ventas'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git status
+On branch ventas
+Your branch is up to date with 'origin/ventas'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   tiendas.txt
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git commit -m "Añadiendo una lista de tiendas a nuestro repositorio ventas"
+[ventas 9f18110] Añadiendo una lista de tiendas a nuestro repositorio ventas
+ 1 file changed, 3 insertions(+)
+ create mode 100644 tiendas.txt
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 342 bytes | 68.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+   2d0359b..9f18110  ventas -> ventas
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (ventas)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git push -u origin recurso_humano
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'recurso_humano' on GitHub by visiting:
+remote:      https://github.com/enrique2102/Examen/pull/new/recurso_humano
+remote:
+To https://github.com/enrique2102/Examen.git
+ * [new branch]      recurso_humano -> recurso_humano
+branch 'recurso_humano' set up to track 'origin/recurso_humano'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   empleados.txt
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+A       empleados.txt
+Your branch is up to date with 'origin/recurso_humano'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git status
+On branch recurso_humano
+Your branch is up to date with 'origin/recurso_humano'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   empleados.txt
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git commit -m "Añadiendo 5 empleados a mi recurso_humano"
+[recurso_humano 900f01e] Añadiendo 5 empleados a mi recurso_humano
+ 1 file changed, 5 insertions(+)
+ create mode 100644 empleados.txt
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 351 bytes | 70.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+   2d0359b..900f01e  recurso_humano -> recurso_humano
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git tag version1.0 -m "Version 1.0"
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 167 bytes | 41.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+ * [new tag]         version1.0 -> version1.0
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git tag
+version1.0
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+Your branch is up to date with 'origin/recurso_humano'.
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git tag version1.0 -m "Version 1.0"
+fatal: tag 'version1.0' already exists
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push --tag
+Everything up-to-date
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git tag
+version1.0
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git diff
+diff --git a/empleados.txt b/empleados.txt
+index 1e2160f..1eeff29 100644
+--- a/empleados.txt
++++ b/empleados.txt
+@@ -2,4 +2,10 @@ Elizabeth
+ Cecilia
+ Enrique
+ Julieta
+-Monserrat
+\ No newline at end of file
++Monserrat
++
++Marlen
++Galvan
++Pancho
++Nadia
++gilberto
+\ No newline at end of file
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git commit -m "Se agregaron 5 nuevos empleados"
+[recurso_humano af69c3e] Se agregaron 5 nuevos empleados
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 61.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+   900f01e..af69c3e  recurso_humano -> recurso_humano
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git tag version1.1 -m "version 1.1"
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 165 bytes | 41.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+ * [new tag]         version1.1 -> version1.1
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git tag
+version1.0
+version1.1
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git status
+On branch recurso_humano
+Your branch is up to date with 'origin/recurso_humano'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fotos_empleados/empleados.png
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git commit -m "añado la imagen de cinco empleados"
+[recurso_humano ac4db48] añado la imagen de cinco empleados
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fotos_empleados/empleados.png
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 33.12 KiB | 3.31 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/enrique2102/Examen.git
+   af69c3e..ac4db48  recurso_humano -> recurso_humano
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git add .
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git status
+On branch recurso_humano
+Your branch is up to date with 'origin/recurso_humano'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sueldos.txt
+
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git commit -m "Añado lista de sueldos"
+[recurso_humano 00108f4] Añado lista de sueldos
+ 1 file changed, 4 insertions(+)
+ create mode 100644 sueldos.txt
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 61.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/enrique2102/Examen.git
+   ac4db48..00108f4  recurso_humano -> recurso_humano
+
+Enrique@DESKTOP-LLC9H7S MINGW64 /c/Examen (recurso_humano)
+$
